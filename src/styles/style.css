@@ -98,7 +98,10 @@ header nav img:active {
 
 /* Atributed SStyles by ID */
 
-@media (max-width: 540px) {
+@media (max-width: 760px) {
+    .index-txt {
+        margin: 2rem;
+    }
     .index-img {
         display: none;
     }
