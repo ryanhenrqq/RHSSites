@@ -97,3 +97,9 @@ header nav img:active {
 }
 
 /* Atributed SStyles by ID */
+
+@media (max-width: 540px) {
+    .index-img {
+        display: none;
+    }
+}
