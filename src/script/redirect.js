@@ -5,7 +5,7 @@ socialMedia.forEach((link, index) => {
         switch (index) {
             case 0:
                 if (confirm("Você será redirecionado para instagram.com")) {
-                    window.open("https://www.instagram.com/rhs.sites/")
+                    window.open("https://www.instagram.com/rhs.code/")
                     break
                 } else {
                     break
@@ -18,7 +18,8 @@ socialMedia.forEach((link, index) => {
                     break
                 }
             default:
-                alert("oi")
+                console.error("Usuário Não Redirecionado")
+                alert("Ocorreu um erro ao redicecionar. Tente novamente mais tarde.")
                 break
         }
     })

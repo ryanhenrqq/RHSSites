@@ -13,13 +13,17 @@
             <img src="./src/res/vectors/logo-image.jpg" alt="Logo RHS Sites">
             <div class="flex-ver">
                 <h1>RHS</h1>
-                <h2><i>Sites</i></h2>
+                <h2><i>Code</i></h2>
             </div>
         </div>
         <nav class="flex-hor">
-            <img src="./src/res/vectors/ico/instagram.png" alt="Instagram">
-            <img src="./src/res/vectors/ico/mail-logo.png" alt="Email">
-            <img src="./src/res/vectors/ico/lupa.png" alt="Pesquisar" style="display: none;">
+            <div id="scrool-zero">
+                <img src="./src/res/vectors/ico/instagram.png" alt="Instagram">
+                <img src="./src/res/vectors/ico/mail-logo.png" alt="Email">
+            </div>
+            <div id="scrool-head" style="display: none;">
+                <button id="contact-now-head"><b>Mande um E-Mail Agora!</b></button>
+            </div>
         </nav>
     </header>
     <main class="flex-ver">
@@ -28,6 +32,7 @@
                 <h3>Seja bem-vindo(a) ao meu projeto de criação de sites!</h3>
                 <p>Olá, tudo bem? Meu nome é Ryan Henrique, e sou alguem que tem um grande hobbie com TI, há um tempo eu comecei a aprender programação por conta própria, justamente tentando entender como essa maquina que usamos hoje em dia funciona. Eu estava aprendendo aquelas linguagem de programação super basicas, justamente voltadas a quem quer começar a aprender do zero, tipo Python e JavaScript mesmo.</p><br>
                 <p>Agora, estou levando adiante e pronto pra tornar esse hobbie no meu trabalho principal! Estou me voltando a fazer tudo sem interferencia nenhuma de uma inteligencia artificial, apenas usando tudo o que eu aprendi ao meu favor de fato, e entregando um projeto feito a mãos humanas de verdade, evitando bugs comuns, aplicando ideias e, no final, saindo a melhor versão pro usuário final!</p>
+                <button id="contact-now"><b>Mande um E-Mail Agora!</b></button>
             </div>
             <div>
                 <img src="./src/res/python-js.jpg" alt="Logos de Python e JavaScript" class="index-img">
@@ -53,8 +58,8 @@
     <script src="./src/script/redirect.js"></script>
     <script src="./src/script/script.js"></script>
     <script>
-        document.addEventListener("scroll", () =>{
-            console.log(window.onscroll)
+        document.addEventListener("scroll", function(){
+            console.log()
         })
     </script>
 </body>
