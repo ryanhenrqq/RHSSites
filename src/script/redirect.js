@@ -1,26 +1,14 @@
-const socialMedia = document.querySelectorAll("header nav img")
+function goToGithub() {
+    window.location.replace("https://www.github.com/ryanhenrqq")
+}
+function goToPortfolio() {
+    window.location.replace("./pg/portfolio.html")
+}
+function goToEmail() {
+    window.open("mailto:rhs.sites.8116@gmail.com")
+}
 
-socialMedia.forEach((link, index) => {
-    link.addEventListener("click", function() {
-        switch (index) {
-            case 0:
-                if (confirm("Você será redirecionado para instagram.com")) {
-                    window.open("https://www.instagram.com/rhs.code/")
-                    break
-                } else {
-                    break
-                }
-            case 1:
-                if (confirm("Você será redirecionado para o seu site padrão de E-Mail,  na função de envio do mesmo")) {
-                    window.open("mailto:rhs.sites.8116@gmail.com?subject=Pedido%20De%20Criação%20de%20Site")
-                    break
-                } else {
-                    break
-                }
-            default:
-                console.error("Usuário Não Redirecionado")
-                alert("Ocorreu um erro ao redicecionar. Tente novamente mais tarde.")
-                break
-        }
-    })
-})
+// go back to home (pagina do portfolio)
+function goHome() {
+    window.location.replace("../index.html")
+}

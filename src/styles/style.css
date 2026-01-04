@@ -37,9 +37,11 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 12vh;
+    height: 6vh;
     background-color: #111111;
     color: white;
+    position: fixed;
+    bottom: 0;
 }
 .hide {
     display: none;
@@ -132,8 +134,7 @@ footer {
     margin-bottom: 1rem;
 }
 .index-txt p {
-    font-size: 1.2rem;
-    overflow-wrap: break-word;
+    font-size: 22pxpx;
 }
 .image-side-main {
     width: 40%;
@@ -154,14 +155,19 @@ footer {
     border-radius: 24px;
     font-weight: bolder;
     box-shadow:  2px 2px 4px black;
-    background-color: #111111;
-    color: green;
+    background-color: #393939;
+    color: white;
 }
 .button-main-top:hover{
-    background-color: white;
-    color: black;
-    box-shadow: inset 2px 2px 4px black;
+    background-color: #000000;
+    color: white;
+    box-shadow: 6px 6px 10px black;
     cursor: pointer;
+}
+.button-main-top:active {
+    background-color: #000000;
+    color: white;
+    box-shadow: inset 6px 6px 10px grey;
 }
 
 /* Estilos da tag Main */
@@ -174,17 +180,23 @@ main {
 /* Segundo Bloco - class SecTb & subclasses */
 
 .secTb-title {
+    display: flex;
+    width: 100%;
+    margin-top: 48px;
+    align-items: center;
+    justify-content: center;
     font-size: 81px;
-    color: #0a3b00;
-}
-.secTb-title:hover {
-    color: #20c200;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;    
+    color: #24d600;
 }
 .secondTb {
     display: flex;
     flex-direction: row;
+    padding-top: 18px;
+}
+.secTb-badges-logo {
+    width: 40%;
+    height: 20%;
+    object-fit: cover;
 }
 
 .secTb-subtitle1 {
@@ -218,6 +230,7 @@ main {
 }
 
 .secondTb div p {
+    padding-top: 1rem;
     margin: 3rem;
 }
 
@@ -268,7 +281,6 @@ main {
         font-size: 28px;
     }
     .index-txt p {
-        margin: 2rem;
         font-size: 16px;
     }
     .button-main-top {
@@ -278,7 +290,13 @@ main {
         width: 0%;
         display: none;
     }
+    .secTb-title {
+        font-size: 49px;
+    }
     .secondTb {
         flex-direction: column;
+    }
+    .secondTb div p {
+        margin: 12px;
     }
 }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/styles/style.css">
+    <title>RHS Code</title>
+    <link rel="shortcut icon" href="../src/res/logo/logo-image.png" type="image/x-icon">
+</head>
+<body class="flex-ver">
+    <header class="flex-hor">
+        <div class="left-head flex-hor">
+            <img src="../src/res/logo/logo-image.png" alt="Logo RHS Sites" class="image-head">
+            <h1 class="title-head">RHS Code</h1>
+        </div>
+        <nav class="right-head flex-hor">
+            <div id="scrool-head" class="flex-hor right-head-buttons-parent">
+                <button class="button-head" onclick=goHome()>
+                    <img src="../src/res/ico/services-portfolio.png" alt="Service Portfólio" class="button-head-image">
+                    <p>Voltar</p>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="flex-ver">
+        <div style="margin-bottom: 24px;">
+            <h3>Oops, você achou um site em manutenção!</h3>
+            <b>Tente entrar aqui novamente mais tarde...</b>
+        </div>
+        <div style="gap: 24px;">
+            <h3>Você ainda pode entrar aqui:</h3>
+            <div style="gap: 24px;">
+                <button class="button-head" onclick=goToGithub()>
+                    <img src="../src/res/ico/github.png" alt="GitHub" class="button-head-image">
+                    <p>Github</p>
+                </button>
+                <button class="button-head" onclick=goToEmail()>
+                    <img src="../src/res/ico/email.png" alt="GitHub" class="button-head-image">
+                    <p>Email</p>
+                </button>
+            </div>
+
+        </div>
+        
+    </main>
+    <footer>
+        <h2 style="color: #ff5757;">Aviso legal</h2>
+        <b>Este site ainda não está pronto</b>
+    </footer>
+    <script src="../src/script/redirect.js"></script>
+    <script src="../src/script/script.js"></script>
+</body>
+</html>
