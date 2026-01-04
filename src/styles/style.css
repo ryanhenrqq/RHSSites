@@ -54,6 +54,7 @@ p {
     align-items: center;
     justify-content: center;
     position: absolute;
+    color: white;
     left: 30px;
 }
 .image-head {
@@ -78,18 +79,25 @@ p {
 .button-head {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 10px;
+    border: none;
+    border-radius: 18px;
+    padding: 12px;
+    background-color: #393939;
+}
+.button-head:hover {
+    cursor: pointer;
 }
 .button-head-image {
     width: 50px;
     height: 50px;
     object-fit: cover;
+    filter: invert(1);
 }
 
-header div img{
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-}
 #scrool-zero {
     padding: 4px;
     border: solid 1px white;
@@ -107,17 +115,6 @@ header div img{
 }
 #scrool-zero img:active {
     transform: scale(1);
-}
-
-.logo-case {
-    color: aliceblue;
-    line-height: 1.8rem;
-}
-.logo-case:hover {
-    cursor: pointer;
-}
-.logo-case div {
-    margin-top: 14px;
 }
 .index-txt {
     max-width: 600px;
