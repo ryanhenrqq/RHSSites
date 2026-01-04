@@ -179,6 +179,7 @@ footer {
     border: solid 1px white;
     border-radius: 10px;
     filter: drop-shadow(2px 2px 4px black);
+    filter: grayscale(1);
 }
 .experience-tab p {
     position: sticky;
