@@ -137,6 +137,7 @@ footer {
 }
 
 .blank-square {
+    display: none;
     position: fixed;
     filter: brightness(0);
     width: 240vh;
