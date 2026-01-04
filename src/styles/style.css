@@ -5,6 +5,14 @@
     padding: 0;
     font-family: "Poppins", sans-serif;
 }
+/*
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*/
+
 body {
     display: flex;
     justify-content: center;
@@ -32,9 +40,6 @@ footer {
     height: 12vh;
     background-color: #111111;
     color: white;
-}
-p {
-    font-size: 1.2rem;
 }
 .hide {
     display: none;
@@ -117,10 +122,8 @@ p {
     transform: scale(1);
 }
 .index-txt {
-    max-width: 600px;
-    margin: 1.8rem;
-
-    transform: scale(0.94);
+    width: 50%;
+    margin: 20px;
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
 
@@ -128,21 +131,29 @@ p {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
+.index-txt p {
+    font-size: 1.2rem;
+    overflow-wrap: break-word;
+}
+.image-side-main {
+    width: 40%;
+    height: 40%;
+}
 .main-splash-img {
-    width: 40rem;
-    height: 40rem;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     filter: drop-shadow(4px 4px 8px black);
 }
 
 .button-main-top{
     margin-top: 20px;
-    padding: 2rem;
-    width: 40rem;
+    padding: 18px;
+    width: 100%;
     font-size: 2.2rem;
     border-radius: 24px;
+    font-weight: bolder;
     box-shadow:  2px 2px 4px black;
-
     background-color: #111111;
     color: green;
 }
@@ -155,7 +166,7 @@ p {
 
 /* Estilos da tag Main */
 main {
-    margin-top: 12vh;
+    margin-top: 15vh;
     animation: 2s anim-lineUp ease-out;
     color: white;
 }
@@ -163,13 +174,17 @@ main {
 /* Segundo Bloco - class SecTb & subclasses */
 
 .secTb-title {
-    font-size: 5rem;
+    font-size: 81px;
     color: #0a3b00;
 }
 .secTb-title:hover {
     color: #20c200;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;    
+}
+.secondTb {
+    display: flex;
+    flex-direction: row;
 }
 
 .secTb-subtitle1 {
@@ -215,7 +230,7 @@ main {
     opacity: 0.5;
   }
   50% {
-    opacity: 1;
+    opacity: 0.7;
     transform: translateX(0%);
   }
   100% {
@@ -225,10 +240,45 @@ main {
 }
 
 @media (max-width: 760px) {
-    .index-txt {
-        margin: 2rem;
+    body {
+        overflow-x: hidden;
     }
-    .index-img {
+    /* Header */
+    .title-head {
         display: none;
+    }
+    .button-head {
+        padding: 8px;
+    }
+    .button-head img {
+        width: 28px;
+        height: 28px;
+    }
+    .button-head p{
+        font-size: 10px;
+    }
+    /* ^^^ */
+    main {
+        flex-wrap: wrap;
+    }
+    .index-txt {
+        width: 100%;
+    }
+    .index-txt h3 {
+        font-size: 28px;
+    }
+    .index-txt p {
+        margin: 2rem;
+        font-size: 16px;
+    }
+    .button-main-top {
+        font-size: 20px;
+    }
+    .image-side-main {
+        width: 0%;
+        display: none;
+    }
+    .secondTb {
+        flex-direction: column;
     }
 }
