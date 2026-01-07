@@ -409,7 +409,10 @@ main {
     }
     /* Header */
     .title-head { 
-        font-size: 22px;
+        font-size: 16px;
+    }
+    .title-head-index {
+        display: none;
     }
     .button-head {
         padding: 8px;
