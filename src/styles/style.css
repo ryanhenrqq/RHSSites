@@ -16,7 +16,6 @@
 body {
     display: flex;
     background-color: #243242;
-    overflow-y: hidden; /* Testing a static landing page style */
 }
 header {
     display: flex;
@@ -41,6 +40,7 @@ footer {
     color: white;
     position: fixed;
     bottom: 0;
+    z-index: 9;
 }
 .hide {
     display: none;
@@ -417,6 +417,7 @@ main {
     }
     .secondTb {
         flex-direction: column;
+        margin-bottom: 6vh;
     }
     .secondTb div p {
         margin: 12px;
