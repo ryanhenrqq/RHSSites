@@ -29,7 +29,11 @@
             <form class="contact-email-form" action="post" autocomplete="off">
                 <h3>Contato Direto - Email</h3>
                 <input type="text" name="name-email" id="name-email" placeholder="Nome" required>
-                <input type="text" name="phone-email" id="phone-email" placeholder="Numero de Telefone" required>
+                <div class="flex-hor" style="gap: 10px;">
+                    <input type="number" name="phone-ddd-email" id="phone-ddd-email" max="999" min="10" placeholder="DDD" style="width: 3rem;">
+                    <input type="number" name="phone-email" id="phone-email" placeholder="Numero de Telefone" required>
+                </div>
+                
                 <select name="type-service-email" id="type-service-email">
                     <option value="service" selected disabled>Escolha...</option>
                     <option value="service">Serviço de criação de site profissional</option>
@@ -38,7 +42,7 @@
                     <option value="service">Outro (Especifique na mensagem)</option>
                 </select>
                 <textarea name="content-email" id="content-email" placeholder="Mensagem" required></textarea>
-                <button type="submit">Enviar</button>
+                <button type="submit" class="button-main-top">Enviar</button>
             </form>
         </div>
         

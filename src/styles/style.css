@@ -308,10 +308,37 @@ main {
     margin: 3rem;
 }
 
+/* Contact Page*/
+
 .contact-email-form {
     display: flex;
     flex-direction: column;
     gap: 28px;
+}
+.contact-email-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 18px;
+}
+#name-email {
+    width: 20rem;
+}
+#type-service-email {
+    width: 20rem;
+    padding: 10px;
+    border: none;
+    border-radius: 18px;
+}
+#content-email {
+    width: 20rem;
+    height: 10rem;
+    padding: 12px;
+    border: none;
+    border-radius: 18px;
+    resize: none;
+}
+.contact-email-form button {
+    width: 20rem;
 }
 
 @keyframes anim-lineUp {
