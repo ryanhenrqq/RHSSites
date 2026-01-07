@@ -314,6 +314,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 28px;
+    margin-bottom: 8vh;
 }
 .contact-email-form input {
     padding: 10px;
@@ -400,8 +401,8 @@ main {
         overflow-x: hidden;
     }
     /* Header */
-    .title-head {
-        display: none;
+    .title-head { 
+        font-size: 22px;
     }
     .button-head {
         padding: 8px;
