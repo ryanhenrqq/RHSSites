@@ -23,23 +23,23 @@
         </nav>
     </header>
     <main class="flex-ver">
-        <div style="margin-bottom: 24px;">
-            <h3>Oops, você achou um site em manutenção!</h3>
-            <b>Tente entrar aqui novamente mais tarde...</b>
-        </div>
-        <div style="gap: 24px;">
-            <h3>Você ainda pode entrar aqui:</h3>
-            <div style="display: flex; flex-direction: row; gap: 12px;">
-                <button class="button-head" onclick=goToGithub()>
-                    <img src="../src/res/ico/github.png" alt="GitHub" class="button-head-image">
-                    <p>Github</p>
-                </button>
-                <button class="button-head" onclick=goToEmail()>
-                    <img src="../src/res/ico/email.png" alt="GitHub" class="button-head-image">
-                    <p>Email</p>
-                </button>
-            </div>
-
+        
+        <div class="header-txt">
+            
+            <form class="contact-email-form" action="post" autocomplete="off">
+                <h3>Contato Direto - Email</h3>
+                <input type="text" name="name-email" id="name-email" placeholder="Nome" required>
+                <input type="text" name="phone-email" id="phone-email" placeholder="Numero de Telefone" required>
+                <select name="type-service-email" id="type-service-email">
+                    <option value="service" selected disabled>Escolha...</option>
+                    <option value="service">Serviço de criação de site profissional</option>
+                    <option value="service">Serviço em software (Formatação, limpeza, etc)</option>
+                    <option value="service">Parceria de serviços</option>
+                    <option value="service">Outro (Especifique na mensagem)</option>
+                </select>
+                <textarea name="content-email" id="content-email" placeholder="Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </div>
         
     </main>

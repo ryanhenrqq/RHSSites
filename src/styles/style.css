@@ -308,6 +308,12 @@ main {
     margin: 3rem;
 }
 
+.contact-email-form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
 @keyframes anim-lineUp {
   0% {
     opacity: 0;
