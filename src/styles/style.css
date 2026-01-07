@@ -342,6 +342,13 @@ main {
     width: 20rem;
 }
 
+.form-backpanel {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 @keyframes anim-lineUp {
   0% {
     opacity: 0;
