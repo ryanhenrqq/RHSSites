@@ -10,7 +10,6 @@ function goContact() {
 function goToEmail() {
     window.open("mailto:rhs.sites.8116@gmail.com")
 }
-
 // Portfolio
 function goToFloodTheCookie(index) {
     if (index === 0) {
@@ -21,7 +20,6 @@ function goToFloodTheCookie(index) {
         goTo404()
     }
 }
-
 function goToOoniquePass(index) {
     if (index === 0) {
         window.open("https://ryanhenrqq.github.io/OoniquePass/")
@@ -31,7 +29,6 @@ function goToOoniquePass(index) {
         goTo404()
     }
 }
-
 function goToToDoTasks(index) {
     if (index === 0) {
         window.open("https://ryanhenrqq.github.io/ToDoTasks/")
@@ -41,12 +38,10 @@ function goToToDoTasks(index) {
         goTo404()
     }
 }
-
 // go back to home (paginas dentro de pg)
 function goHome() {
     window.location.replace("../index.html")
 }
-
 function goTo404() {
-    window.location.replace("./except/404.html")
+    window.open("./except/404.html")
 }
