@@ -353,6 +353,42 @@ main {
     align-items: center;
 }
 
+/* Portfolio Page*/
+.gapper {
+    gap: 24px;
+}
+.portfolio-item-container {
+    border: solid 1px white;
+    border-radius: 24px;
+    padding: 16px;
+    gap: 16px;
+}
+.header-item-container {
+    display: flex;
+    flex-direction: row;
+}
+.header-item-container img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    padding-right: 8px;
+}
+.main-item-container {
+    gap: 8px;
+}
+.main-item-container button{
+    width: 100%;
+    padding: 8px;
+}
+.footer-item-container b{
+    width: 10rem;
+}
+.portfolio-written-lang {
+    width: 90%;
+    height: 30px;
+    object-fit: cover;
+}
+
 @keyframes anim-lineUp {
   0% {
     opacity: 0;

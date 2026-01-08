@@ -22,26 +22,61 @@
             </div>
         </nav>
     </header>
-    <main class="flex-ver">
-        <div style="margin-bottom: 24px;">
-            <h3>Oops, você achou um site em manutenção!</h3>
-            <b>Tente entrar aqui novamente mais tarde...</b>
-        </div>
-        <div style="gap: 24px;">
-            <h3>Você ainda pode entrar aqui:</h3>
-            <div style="display: flex; flex-direction: row; gap: 12px;">
-                <button class="button-head" onclick=goToGithub()>
-                    <img src="../src/res/ico/github.png" alt="GitHub" class="button-head-image">
-                    <p>Github</p>
-                </button>
-                <button class="button-head" onclick=goHome()>
-                    <img src="../src/res/ico/services-portfolio.png" alt="GitHub" class="button-head-image">
-                    <p>Voltar</p>
-                </button>
+    <main class="flex-ver gapper">
+        <div class="flex-ver portfolio-item-container">
+            <div class="header-item-container">
+                <img src="https://ryanhenrqq.github.io/FloodTheCookie/src/res/fav/favicon.png" alt="">
+                <div class="flex-ver">
+                    <b>FloodTheCookie</b>
+                    <p>Jogo Point-n-Click interativo e relaxante!</p>
+                </div>
             </div>
-
+            <div class="flex-ver main-item-container">
+                <button onclick=goToFloodTheCookie(0)>Abrir</button>
+                <button onclick=goToFloodTheCookie(1)>Visitar Codigo-Fonte</button>
+                <button onclick=goToFloodTheCookie(2)>Reportar Bug</button>
+            </div>
+            <div class="flex-hor footer-item-container">
+                <b>Escrito em </b>
+                <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000" alt="JavaScript" class="portfolio-written-lang">
+            </div>
         </div>
-        
+        <div class="flex-ver portfolio-item-container">
+            <div class="header-item-container">
+                <img src="https://raw.githubusercontent.com/ryanhenrqq/OoniquePass/main/res/favicon.png" alt="">
+                <div class="flex-ver">
+                    <b>OoniquePass</b>
+                    <p>Gerador de senhas simples e objetivo.</p>
+                </div>
+            </div>
+            <div class="flex-ver main-item-container">
+                <button onclick=goToOoniquePass(0) disabled>Abrir</button>
+                <button onclick=goToOoniquePass(1)>Visitar Codigo-Fonte</button>
+                <button onclick=goToOoniquePass(2)>Reportar Bug</button>
+            </div>
+            <div class="flex-hor footer-item-container">
+                <b>Escrito em </b>
+                <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" class="portfolio-written-lang">
+            </div>
+        </div>
+        <div class="flex-ver portfolio-item-container">
+            <div class="header-item-container">
+                <img src="https://ryanhenrqq.github.io/ToDoTasks/components/res/icon/task.svg" alt="" style="filter: invert(1);">
+                <div class="flex-ver">
+                    <b>ToDoTasks</b>
+                    <p>Crie tarefas e lembretes pelo navegador!</p>
+                </div>
+            </div>
+            <div class="flex-ver main-item-container">
+                <button onclick=goToToDoTasks(0)>Abrir</button>
+                <button onclick=goToToDoTasks(1)>Visitar Codigo-Fonte</button>
+                <button onclick=goToToDoTasks(2)>Reportar Bug</button>
+            </div>
+            <div class="flex-hor footer-item-container">
+                <b>Escrito em </b>
+                <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000" alt="JavaScript" class="portfolio-written-lang">
+            </div>
+        </div>
     </main>
     <footer>
         <h2 style="color: #ff5757;">Aviso</h2>
