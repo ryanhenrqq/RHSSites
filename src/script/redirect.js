@@ -1,5 +1,5 @@
 function goToGithub() {
-    window.location.open("https://www.github.com/ryanhenrqq")
+    window.open("https://www.github.com/ryanhenrqq")
 }
 function goToPortfolio() {
     window.location.replace("./pg/portfolio.html")
