@@ -367,7 +367,7 @@ main {
     margin-bottom: 48px;
     align-items: center;
     justify-content: center;
-    font-size: 81px;
+    font-size: 50px;
     color: #24d600;
 }
 .thirtyTb {
@@ -378,7 +378,7 @@ main {
 }
 .thirtyTb p {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .thirtyTb img {
     filter: invert(0.5);
@@ -606,6 +606,12 @@ button:disabled:hover {
     }
     .secTb-title {
         font-size: 30px;
+    }
+    .thirtyTb-title {
+        font-size: 21px;
+    }
+    .thirtyTb p {
+        font-weight: 400;
     }
     .secondTb {
         flex-direction: column;
