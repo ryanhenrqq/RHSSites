@@ -347,6 +347,43 @@ main {
     margin: 3rem;
 }
 
+/* Thirty tab */
+.main-container-thirty-tb {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    padding: 18px;
+    border-radius: 34px;
+}
+.child-container-thirty-tb {
+    position: relative;
+    z-index: 2;
+}
+.thirtyTb-title {
+    display: flex;
+    width: 100%;
+    margin-bottom: 48px;
+    align-items: center;
+    justify-content: center;
+    font-size: 81px;
+    color: #24d600;
+}
+.thirtyTb {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 90%;
+}
+.thirtyTb p {
+    font-size: 20px;
+    font-weight: 600;
+}
+.thirtyTb img {
+    filter: invert(0.5);
+}
+
 /* Contact Page*/
 
 .contact-email-form {
