@@ -171,6 +171,11 @@ footer {
 .experience-tab:hover {
     cursor: pointer;
 }
+.right-experience-tab div {
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
 .experience-tab img {
     width: 40px;
     height: 40px;
@@ -508,11 +513,22 @@ main {
     main {
         flex-wrap: wrap;
     }
+    /*
     .experience-tab-flex {
         flex-direction: column;
     }
+        */
     .experience-tab {
         width: 90%;
+        height: 2rem;
+    }
+    .experience-tab img {
+        width: 20px;
+        height: 20px;
+    }
+    .right-experience-tab div {
+        letter-spacing: 2px;
+        font-size: 12px;
     }
     .index-txt {
         width: 90%;
