@@ -48,6 +48,7 @@ footer {
     align-items: center;
 }
 footer div {
+    width: 90%;
     gap: 12px;
 }
 footer a {
@@ -67,6 +68,10 @@ footer button img {
 footer button:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+.last-line-footer {
+    font-size: 12px;
+    width: 90%;
 }
 
 .hide {
