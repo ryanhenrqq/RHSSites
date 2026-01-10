@@ -38,6 +38,33 @@ function goToToDoTasks(index) {
         goTo404()
     }
 }
+function goToOpenWeatherApp(index) {
+    if (index === 0) {
+        window.open("https://ryanhenrqq.github.io/ClimaComOpenWeather/")
+    } else if (index === 1) {
+        window.open("https://www.github.com/ryanhenrqq/ClimaComOpenWeather/")
+    } else {
+        goTo404()
+    }
+}
+function goToKalcCalculadora(index) {
+    if (index === 0) {
+        window.open("https://ryanhenrqq.github.io/KalcCalculadora/")
+    } else if (index === 1) {
+        window.open("https://www.github.com/ryanhenrqq/KalcCalculadora/")
+    } else {
+        goTo404()
+    }
+}
+function goToKalcCalculadoraLite(index) {
+    if (index === 0) {
+        window.open("https://ryanhenrqq.github.io/KalcCalculadoraLite/")
+    } else if (index === 1) {
+        window.open("https://www.github.com/ryanhenrqq/KalcCalculadoraLite/")
+    } else {
+        goTo404()
+    }
+}
 // go back to home (paginas dentro de pg)
 function goHome() {
     window.location.replace("../index.html")
