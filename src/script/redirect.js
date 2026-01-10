@@ -10,6 +10,9 @@ function goContact() {
 function goToEmail() {
     window.open("mailto:rhs.sites.8116@gmail.com")
 }
+function goToIg() {
+    window.open("https://www.instagram.com/rhs.code/")
+}
 // Portfolio
 function goToFloodTheCookie(index) {
     if (index === 0) {
