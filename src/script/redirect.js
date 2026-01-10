@@ -13,6 +13,9 @@ function goToEmail() {
 function goToIg() {
     window.open("https://www.instagram.com/rhs.code/")
 }
+function goToNewPipe() {
+    window.open("https://newpipe.net/")
+}
 // Portfolio
 function goToFloodTheCookie(index) {
     if (index === 0) {
