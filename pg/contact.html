@@ -28,21 +28,25 @@
                 <h3></h3>
                 <label for="name-email">Nome e Sobrenome:</label>
                 <input type="text" name="name-email" id="name-email" placeholder="Nome" required>
+                <label for="name-email">Email:</label>
+                <input type="email" name="form-email" id="form-email" placeholder="E-mail" required>
                 <label for="name-email">Telefone:</label>
                 <div class="flex-hor" style="gap: 10px;">
-                    <input type="number" name="phone-ddd-email" id="phone-ddd-email" max="999" min="10" placeholder="DDD" style="width: 2.5rem;">
+                    <input type="number" name="phone-ddd-email" id="phone-ddd-email" max="999" min="10" placeholder="DDD" style="width: 2.5rem;" required>
                     <input type="number" name="phone-email" id="phone-email" placeholder="Numero de Telefone" required>
                 </div>
                 <label for="name-email">Tipo de requisição:</label>
-                <select name="type-service-email" id="type-service-email">
-                    <option value="service" selected disabled>Escolha...</option>
-                    <option value="service">Serviço de criação de site profissional</option>
-                    <option value="service">Serviço em software (Formatação, limpeza, etc)</option>
-                    <option value="service">Parceria de serviços</option>
-                    <option value="service">Outro (Especifique na mensagem)</option>
+                <select name="type-service-email" id="type-service-email" required>
+                    <option value="" selected disabled>Escolha...</option>
+                    <option value="professional-site-creation">Serviço de criação de site profissional</option>
+                    <option value="software-related-service">Serviço em software (Formatação, limpeza, etc)</option>
+                    <option value="partnership">Parceria de serviços</option>
+                    <option value="other">Outro (Especifique na mensagem)</option>
                 </select>
                 <label for="name-email">Mensagem:</label>
                 <textarea name="content-email" id="content-email" placeholder="Mensagem" required></textarea>
+                <!-- Proteção para o Formspree -->
+                <input type="text" name="_gotcha" style="display:none"> 
                 <button type="submit" class="button-main-top">Enviar</button>
             </form>
         </div>

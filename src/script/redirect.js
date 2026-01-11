@@ -78,3 +78,6 @@ function goHome() {
 function goTo404() {
     window.open("./except/404.html")
 }
+function goTo500() {
+    window.open("./except/500.html")
+}
