@@ -383,14 +383,9 @@ main {
 .main-container-thirty-tb {
     justify-content: center;
     align-items: center;
-    position: relative;
     overflow: hidden;
-    margin: 20px;
-    padding: 18px;
-    border-radius: 34px;
 }
 .child-container-thirty-tb {
-    position: relative;
     z-index: 2;
 }
 .thirtyTb-title {
@@ -405,8 +400,6 @@ main {
 .thirtyTb {
     display: flex;
     flex-direction: row;
-    position: relative;
-    width: 90%;
 }
 .thirtyTb p {
     font-size: 20px;
