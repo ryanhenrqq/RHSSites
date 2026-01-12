@@ -41,6 +41,17 @@
             </div>
         </div>
     </main>
-    <script src="../src/script/except/except.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const title = document.getElementById("title-head-dynamo")
+            title.textContent = "Enviado"
+        })
+        function goToGithub() {
+            window.location.replace("https://www.github.com/ryanhenrqq")
+        }
+        function goHome() {
+            window.location.replace("../../index.html")
+        }
+    </script>
 </body>
 </html>
