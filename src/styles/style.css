@@ -64,10 +64,10 @@ footer button:hover {
 }
 /* Ids importantes - destaque */
 #pt-version-index {
-    display: none;
+    display: flex;
 }
 #en-version-index {
-    display: flex;
+    display: none;
 }
 /* classes */
 .last-line-footer {
