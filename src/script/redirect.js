@@ -10,8 +10,11 @@ function goContact() {
 function goToEmail() {
     window.open("mailto:rhs.sites.8116@gmail.com")
 }
-function goToIg() {
+function goToIgPort() {
     window.open("https://www.instagram.com/rhs.code/")
+}
+function goToIgEng() {
+    window.open("https://www.instagram.com/rhs.codev/")
 }
 function goToNewPipe() {
     window.open("https://newpipe.net/")
