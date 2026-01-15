@@ -71,6 +71,19 @@ footer button:hover {
     background-color: #393939;
     color: white;
 }
+#lang-sel-body {
+    display: none;
+    padding: 8px;
+    border-radius: 18px;
+    width: 3.5rem;
+    height: 2rem;
+    background-color: #393939;
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9;
+}
 #pt-version-index {
     display: flex;
 }
@@ -552,6 +565,12 @@ button:disabled:hover {
     }
     .index-txt h3 {
         font-size: 41px;
+    }
+    #lang-sel {
+        display: none;
+    }
+    #lang-sel-body {
+        display: block;
     }
 }
 
