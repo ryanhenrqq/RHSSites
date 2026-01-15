@@ -34,7 +34,7 @@ footer {
     padding-top: 12px;
     background-color: #111111;
     color: white;
-    z-index: 9;
+    z-index: 8;
 }
 .align {
     justify-content: center;
@@ -72,11 +72,15 @@ footer button:hover {
     color: white;
 }
 #lang-sel-body {
+    justify-content: center;
+    align-items: center;
     display: none;
-    padding: 8px;
+    padding: 5px;
+    font-size: 22px;
+    font-weight: 700;
     border-radius: 18px;
-    width: 3.5rem;
-    height: 2rem;
+    width: 5rem;
+    height: 3rem;
     background-color: #393939;
     color: white;
     position: fixed;
