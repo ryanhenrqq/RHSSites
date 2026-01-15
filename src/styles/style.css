@@ -71,7 +71,7 @@ footer button:hover {
     background-color: #393939;
     color: white;
 }
-#lang-sel-body {
+.lang-sel-body {
     justify-content: center;
     align-items: center;
     display: none;
@@ -573,7 +573,7 @@ button:disabled:hover {
     #lang-sel {
         display: none;
     }
-    #lang-sel-body {
+    .lang-sel-body {
         display: block;
     }
 }

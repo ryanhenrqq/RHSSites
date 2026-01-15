@@ -1,6 +1,11 @@
 const languageSelect = document.getElementById("lang-sel")
-const languageSelectBd = document.querySelectorAll("#lang-sel-body")
-
+const languageSelectBd = document.querySelectorAll(".lang-sel-body")
+document.addEventListener("DOMContentLoaded", function() {
+    languageSelect.value = "port"
+    languageSelectBd.forEach(item => {
+        item.value = "port"
+    })
+})
 languageSelect.addEventListener("change", function() {
     const enMainElem = document.getElementById("en-version-index")
     const ptMainElem = document.getElementById("pt-version-index")
@@ -34,8 +39,8 @@ languageSelect.addEventListener("change", function() {
     }
 })
 
-languageSelectBd.forEach(input => {
-    input.addEventListener("change", function() {
+languageSelectBd.forEach(item => {
+    item.addEventListener("change", function() {
         const enMainElem = document.getElementById("en-version-index")
         const ptMainElem = document.getElementById("pt-version-index")
         const enFooterElem = document.getElementById("en-version-footer-index")
@@ -53,6 +58,9 @@ languageSelectBd.forEach(input => {
             languageSelect.value = "port"
             console.log("PT SELECCIONADO no bd")
             console.log(this.value)
+            languageSelectBd.forEach(childValue => {
+                childValue.value = "port"
+            })
         } else if (this.value === "eng") {
             ptMainElem.style.display = "none"
             enMainElem.style.display = "flex"
@@ -63,6 +71,9 @@ languageSelectBd.forEach(input => {
             languageSelect.value = "eng"
             console.log("EN SELECCIONADO no bd")
             console.log(this.value)
+            languageSelectBd.forEach(childValue => {
+                childValue.value = "eng"
+            })
         }
     })
 })
