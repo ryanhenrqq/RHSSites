@@ -63,6 +63,14 @@ footer button:hover {
     cursor: pointer;
 }
 /* Ids importantes - destaque */
+#lang-sel {
+    padding: 8px;
+    border-radius: 18px;
+    width: 100%;
+    height: 100%;
+    background-color: #393939;
+    color: white;
+}
 #pt-version-index {
     display: flex;
 }
