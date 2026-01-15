@@ -62,6 +62,13 @@ footer button:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
+/* Ids importantes - destaque */
+#pt-version-index {
+    display: none;
+}
+#en-version-index {
+    display: flex;
+}
 /* classes */
 .last-line-footer {
     font-size: 12px;
