@@ -21,11 +21,11 @@
             <div id="scrool-head" class="flex-hor right-head-buttons-parent">
                 <button class="button-head" onclick=goToPortfolio()>
                     <img src="./src/res/ico/services-portfolio.png" alt="Service Portfólio" class="button-head-image">
-                    <p>Portfólio</p>
+                    <p id="lang-header-portfolio">Portfólio</p>
                 </button>
                 <button class="button-head" onclick=goContact()>
                     <img src="./src/res/ico/comment.png" alt="Message" class="button-head-image">
-                    <p>Contato</p>
+                    <p id="lang-header-contact">Contato</p>
                 </button>
                 <select name="lang-sel" id="lang-sel">
                     <option value="port">Portuguese</option>
@@ -159,35 +159,35 @@
         <div class="flex-ver main-container-second-tb">
             <img src="./src/res/img/vs-code-photo.jpg" alt="VS Code Photo" class="secondTb-img-back">
             <div class="flex-ver child-container-second-tb">
-                <h3 class="secTb-title">Áreas de Atuação</h3>
+                <h3 class="secTb-title">Knowledge Fields</h3>
                 <div class="secondTb">
                     <div class="flex-ver">
                         <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" class="secTb-badges-logo">
-                        <p>Python foi a linguagem que me ensinou a logica da programação, me fez descobrir o gosto de criar novos programas e continuar nesta area. Atualmente, não é o meu principal foco por não ter suporte a outros dispositivos, mas é otimo para programas desktops e automações.</p>
+                        <p>Python was the language that taught me the logic of programming, made me discover the taste of creating new programs and continue in this area. Currently, it's not my main focus because it doesn't support other devices, but it's great for desktop programs and automations.</p>
                     </div>
                     <div class="flex-ver">
                         <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000" alt="JavaScript" class="secTb-badges-logo">
-                        <p>JavaScript é a linguagem que mais tive interesse de aprender pela incrivel responsividade e possibilidades online dentro dela, fui tentar ser ambicioso de aprender Java até conhecer essa aí 😅. Meu foco principal esta sendo os frameworks React & Typescript</p>
+                        <p>JavaScript is the language that I was most interested in learning because of the incredible responsiveness and online possibilities within it, I tried to be ambitious to learn Java until I met this one 😅. My main focus is on React & Typescript frameworks, like React and TypeScript.</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="flex-ver main-container-thirty-tb">
-            <h3 class="thirtyTb-title">Por que escolher o RHS Code?</h3>
+            <h3 class="thirtyTb-title">Why you must choose RHS Code?</h3>
             <div class="flex-ver child-container-thirty-tb">
                 <div class="thirtyTb">
                     <div class="image-side-main">
                         <img src="./src/res/ico/question.png" alt="" class="main-splash-img">
                     </div>
                     <div class="flex-ver index-txt">
-                        <p>Eu faço um trabalho de organização impecavel em seu proximo site! Todos os codigos ficam bem declarados e organizados em cada canto, fazendo assim uma manutenção posterior muito mais facil e amigavel pro seu bolso.</p>
-                        <p>Há de concordar que um codigo todo bagunçado, antigo e mal-otimizado é muito menos amigavel pra quem irá fazer algum conserto do codigo de seu site! Fora que algo mais limpo irá, com toda certeza, deixar o seu site o mais otimizado possivel e, compartivel com os motores de navegação mais recentes presentes nos navegadores.</p>
+                        <p>I do an impeccable job of organizing your next site! All codes are well declared and organized in each corner, thus making subsequent maintenance much easier and friendlier for your pocket.</p>
+                        <p>You have to agree that a messy, old and poorly optimized code is much less friendly to those who will make some corrections to the code of their site! Apart from that, something cleaner will certainly make your site as optimized as possible and compatible with the latest navigation engines present in browsers.</p>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer>
+    <footer id="pt-version-footer-index">
         <div class="flex-hor align">
             <h2 style="color: #ff5757;">Aviso</h2>
             <b>Este site ainda não está pronto</b>
@@ -197,6 +197,18 @@
         </div>
         <div class="flex-hor align last-line-footer">
             <small><a href="#">RHS Code</a> é uma marca digital criada por Ryan Henrique</small>
+        </div>
+    </footer>
+    <footer id="en-version-footer-index">
+        <div class="flex-hor align">
+            <h2 style="color: #ff5757;">Notice</h2>
+            <b>This website isn`t done yet!</b>
+        </div>
+        <div class="flex-hor">
+            <button onclick=goToIg()><img src="./src/res/ico/instagram.png" alt="Instagram"></button>
+        </div>
+        <div class="flex-hor align last-line-footer">
+            <small><a href="#">RHS Code</a> is a digital brand created by Ryan Henrique</small>
         </div>
     </footer>
     <script src="./src/script/redirect.js"></script>
