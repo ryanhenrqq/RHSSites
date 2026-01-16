@@ -518,6 +518,17 @@ button:disabled:hover {
     cursor: not-allowed;
 }
 
+.page-end-suggestion {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-top: solid 1px white;
+    color: white;
+}
+
 @keyframes anim-lineUp {
   0% {
     opacity: 0;

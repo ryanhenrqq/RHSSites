@@ -114,6 +114,24 @@
                 </div>
             </div>
         </div>
+        <div class="page-end-suggestion">
+            <h3>Você chegou ao final da pagina :D</h3>
+            <h3>Você ainda pode tentar:</h3>
+            <div style="display: flex; flex-direction: row; gap: 12px;">
+                <button class="button-head" onclick=goToGithub()>
+                    <img src="../../src/res/ico/github.png" alt="GitHub" class="button-head-image">
+                    <p>Github</p>
+                </button>
+                <button class="button-head" onclick=goContact()>
+                    <img src="./src/res/ico/comment.png" alt="Message" class="button-head-image">
+                    <p id="lang-header-contact">Contato</p>
+                </button>
+                <button class="button-head" onclick=goHome() disabled>
+                    <img src="../src/res/ico/return-button.png" alt="Return" class="button-head-image" style="filter: invert(1);">
+                    <p>Voltar</p>
+                </button>
+        </div>
+    </div>
     </main>
     <main class="flex-ver" id="en-version-index">
         <select class="lang-sel-body">
@@ -194,7 +212,25 @@
                 </div>
             </div>
         </div>
+        <div class="page-end-suggestion">
+            <h3>You reached the end :D</h3>
+            <h3>Meanwhile, you can still try:</h3>
+            <div style="display: flex; flex-direction: row; gap: 12px;">
+                <button class="button-head" onclick=goToGithub()>
+                    <img src="../../src/res/ico/github.png" alt="GitHub" class="button-head-image">
+                    <p>Github</p>
+                </button>
+                <button class="button-head" onclick=goContact()>
+                    <img src="./src/res/ico/comment.png" alt="Message" class="button-head-image">
+                    <p id="lang-header-contact">Contact</p>
+                </button>
+                <button class="button-head" onclick=goHome() disabled>
+                    <img src="../src/res/ico/return-button.png" alt="Return" class="button-head-image" style="filter: invert(1);">
+                    <p>Back</p>
+                </button>
+        </div>
     </main>
+    
     <footer id="pt-version-footer-index">
         <div class="flex-hor align">
             <h2 style="color: #ff5757;">Aviso</h2>
