@@ -275,7 +275,11 @@ footer button:hover {
     box-shadow:  2px 2px 4px black;
     background-color: #393939;
     color: white;
-    animation: high-jump 2s ease infinite;
+    animation: high-jump;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
     transition: background-color 0.4s ease, box-shadow 0.4s ease;
 }
 .button-main-top:hover{
