@@ -168,6 +168,10 @@ footer button:hover {
 .button-head:active {
     background-color: #252525;
 }
+/*
+.c-head {
+    animation: jump 2s ease infinite;
+*/
 .button-head-image {
     width: 30px;
     height: 30px;
@@ -271,6 +275,7 @@ footer button:hover {
     box-shadow:  2px 2px 4px black;
     background-color: #393939;
     color: white;
+    animation: high-jump 2s ease infinite;
     transition: background-color 0.4s ease, box-shadow 0.4s ease;
 }
 .button-main-top:hover{
@@ -544,6 +549,36 @@ button:disabled:hover {
   100% {
     opacity: 1;
     transform: translateX(0%);
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes high-jump {
+  0% {
+    transform: translateY(0);
+  }
+  3% {
+    transform: translateY(2px);
+  }
+  65% {
+    transform: translateY(-20px);
+  }
+  97% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
