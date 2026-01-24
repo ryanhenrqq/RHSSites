@@ -25,6 +25,9 @@ function goToFloodTheCookie(index) {
         window.open("https://ryanhenrqq.github.io/FloodTheCookie/")
     } else if (index === 1) {
         window.open("https://www.github.com/ryanhenrqq/FloodTheCookie/")
+    } else if (index === 2) {
+        localStorage.setItem("pgName-bug-report", "Flood The Cookie")
+        window.open("./report.html")
     } else {
         goTo404()
     }
@@ -34,6 +37,9 @@ function goToOoniquePass(index) {
         window.open("https://ryanhenrqq.github.io/OoniquePass/")
     } else if (index === 1) {
         window.open("https://www.github.com/ryanhenrqq/OoniquePass/")
+    } else if (index === 2) {
+        localStorage.setItem("pgName-bug-report", "OoniquePass")
+        window.open("./report.html")
     } else {
         goTo404()
     }
@@ -43,6 +49,9 @@ function goToToDoTasks(index) {
         window.open("https://ryanhenrqq.github.io/ToDoTasks/")
     } else if (index === 1) {
         window.open("https://www.github.com/ryanhenrqq/ToDoTasks/")
+    } else if (index === 2) {
+        localStorage.setItem("pgName-bug-report", "To-Do Tasks")
+        window.open("./report.html")
     } else {
         goTo404()
     }
@@ -52,6 +61,9 @@ function goToOpenWeatherApp(index) {
         window.open("https://ryanhenrqq.github.io/ClimaComOpenWeather/")
     } else if (index === 1) {
         window.open("https://www.github.com/ryanhenrqq/ClimaComOpenWeather/")
+    } else if (index === 2) {
+        localStorage.setItem("pgName-bug-report", "Open Weather App")
+        window.open("./report.html")
     } else {
         goTo404()
     }
@@ -61,6 +73,9 @@ function goToKalcCalculadora(index) {
         window.open("https://ryanhenrqq.github.io/KalcCalculadora/")
     } else if (index === 1) {
         window.open("https://www.github.com/ryanhenrqq/KalcCalculadora/")
+    } else if (index === 2) {
+        localStorage.setItem("pgName-bug-report", "Kalc Calculadora - React Version")
+        window.open("./report.html")
     } else {
         goTo404()
     }
@@ -70,6 +85,9 @@ function goToKalcCalculadoraLite(index) {
         window.open("https://ryanhenrqq.github.io/KalcCalculadoraLite/")
     } else if (index === 1) {
         window.open("https://www.github.com/ryanhenrqq/KalcCalculadoraLite/")
+    } else if (index === 2) {
+        localStorage.setItem("pgName-bug-report", "Kalc Calculadora Lite - Android Studio")
+        window.open("./report.html")
     } else {
         goTo404()
     }
