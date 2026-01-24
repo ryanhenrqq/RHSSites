@@ -630,6 +630,9 @@ button:disabled:hover {
     .lang-sel-body {
         display: block;
     }
+    .portfolio-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (max-width: 760px) {
@@ -711,5 +714,8 @@ button:disabled:hover {
     }
     .secondTb div p {
         margin: 12px;
+    }
+    .portfolio-grid {
+        grid-template-columns: 1fr;
     }
 }
