@@ -26,7 +26,7 @@ formRoot.addEventListener("submit", async (e) => {
         setTimeout(goTo500, 5000)
     }
 })
-
+// necessario corrigir bug - envio de formulario incorreto - formRoot is null 5:1
 formRpo.addEventListener("submit", async (e) => {
     e.preventDefault()
     const formData = new FormData(formRpo)
