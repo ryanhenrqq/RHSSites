@@ -427,14 +427,14 @@ main {
 
 /* Contact Page*/
 
-.contact-email-form {
+.contact-email-form, .report-email-form {
     display: flex;
     flex-direction: column;
     gap: 28px;
     width: 80%;
     margin-bottom: 8vh;
 }
-.contact-email-form input {
+.contact-email-form input, .report-email-form input {
     padding: 10px;
     border: none;
     border-radius: 18px;
@@ -459,7 +459,7 @@ main {
     border-radius: 18px;
     resize: none;
 }
-.contact-email-form button {
+.contact-email-form button, .report-email-form button {
     width: 100%;
 }
 

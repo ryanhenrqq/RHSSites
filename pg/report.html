@@ -23,12 +23,16 @@
         </nav>
     </header>
     <main class="flex-ver" id="form-frontpanel">
-        <small>O bug será reportado de forma anônima. Especifique-o abaixo com o maximo de detalhes que puder!</small>
+        <small>O bug será reportado de forma anônima, e alguns dados basicos foram coletados para ajudar a solucionar o problema com maior eficiencia. Especifique-o abaixo com o maximo de detalhes que puder!</small>
         <div class="header-txt">
-            <form class="contact-email-form" id="contact-email-form" autocomplete="off">
+            <form class="contact-email-form" id="contact-report-form" autocomplete="off">
                 <h3></h3>
                 <label for="project-name">Projeto:</label>
                 <input type="text" name="project-name" id="project-name" placeholder="Nome" disabled>
+                <label for="browser-get">Cliente</label>
+                <input type="text" name="browser-get" id="browser-get" disabled>
+                <label for="browser-get">Plataforma</label>
+                <input type="text" name="SO-get" id="SO-get" disabled>
                 <label for="name-email">Tipo de bug:</label>
                 <select name="type-service-email" id="type-service-email" required>
                     <option value="" selected disabled>Escolha...</option>
@@ -37,14 +41,9 @@
                     <option value="">Bug Interno</option>
                     <option value="">Outro (Especifique)</option>
                 </select>
-                <label for="name-email">Mensagem:</label>
+                <label for="name-email">Explicação:</label>
                 <textarea name="content-email" id="content-email" placeholder="Mensagem" required></textarea>
-                <label for="browser-get">Cliente</label>
-                <input type="text" name="browser-get" id="browser-get">
-                <label for="browser-get">Versão do Cliente</label>
-                <input type="text" name="browser-v-get" id="browser-v-get">
-                <label for="browser-get">Plataforma</label>
-                <input type="text" name="SO-get" id="SO-get">
+                <textarea type="text" name="analytics-report" id="analytics-report" disabled></textarea>
                 <!-- Proteção para o Formspree -->
                 <input type="text" name="_gotcha" style="display:none"> 
                 <button type="submit" class="button-main-top">Enviar</button>
@@ -88,7 +87,41 @@
             } else {
                 document.getElementById("project-name").disabled = false
             }
+
+            document.getElementById("browser-get").value = getDeviceAnalytics()
+            document.getElementById("SO-get").value = getSimplePlatform()
+            document.getElementById("analytics-report").value = getCompleteAnalyics()
         })
+        function getSimplePlatform() {
+            const ua = navigator.userAgent.toLowerCase()
+            const platform = navigator.platform?.toLowerCase() || ''
+
+            if (/android/.test(ua)) return 'Android'
+            if (/iphone|ipad|ipod/.test(ua)) return 'IOS'
+            if (/win/.test(platform)) return 'WindowsNT'
+            if (/mac/.test(platform)) return 'MacOS'
+            if (/linux/.test(platform)) return 'Linux/Unix'
+
+            return 'Unknown'
+        }
+        function getDeviceAnalytics() {
+            return navigator.userAgent
+        }
+        function getCompleteAnalyics() {
+            return `
+                platform: ${navigator.platform}\n
+                mobile: ${navigator.userAgentData?.mobile ?? null}\n
+                cores: ${navigator.hardwareConcurrency},
+                memory: ${navigator.deviceMemory ?? null},
+                screen: {
+                    width: ${screen.width},
+                    height: ${screen.height},
+                    dpr: ${devicePixelRatio}
+                },
+                language: ${navigator.language},
+                timezone: ${Intl.DateTimeFormat().resolvedOptions().timeZone}`
+        }
+
     </script>
     <script src="../src/script/redirect.js"></script>
     <script src="../src/script/script.js"></script>
