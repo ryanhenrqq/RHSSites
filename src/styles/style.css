@@ -473,9 +473,6 @@ main {
 .flex-ver small{
     margin: 12px;
 }
-.header-txt, input {
-    width: 100%;
-}
 
 /* Portfolio Page*/
 .gapper {

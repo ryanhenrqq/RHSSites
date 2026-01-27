@@ -29,12 +29,12 @@ formRoot.addEventListener("submit", async (e) => {
 // necessario corrigir bug - envio de formulario incorreto - formRoot is null 5:1
 formRpo.addEventListener("submit", async (e) => {
     e.preventDefault()
-    const formData = new FormData(formRpo)
+    const formDatar = new FormData(formRpo)
 
     try {
         const response = await fetch("https://formspree.io/f/mpqpyykr", {
             method: "POST",
-            body: formData,
+            body: formDatar,
             headers: {
                 "Accept": "application/json"
             }
