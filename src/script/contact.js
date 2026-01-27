@@ -16,7 +16,7 @@ formRoot.addEventListener("submit", async (e) => {
         })
 
         if (response.ok) {
-            window.location.replace("./submited.html")
+            changeToSubmited()
         } else {
             console.error("Erro no envio do formulario: Dentro da condicional do submit")
             setTimeout(goTo500, 5000)
@@ -26,6 +26,12 @@ formRoot.addEventListener("submit", async (e) => {
         setTimeout(goTo500, 5000)
     }
 })
+function changeToSubmited() {
+    const subElem = document.getElementById("submitted")
+    const frontElem = document.getElementById("form-frontpanel")
+    subElem.style.display = "flex"
+    frontElem.style.display = "none"
+}
 // necessario corrigir bug - envio de formulario incorreto - formRoot is null 5:1
 formRpo.addEventListener("submit", async (e) => {
     e.preventDefault()
