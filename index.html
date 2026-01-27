@@ -10,21 +10,24 @@
 <body class="flex-ver">
     <header class="flex-hor">
         <div class="left-head flex-hor">
-            <img src="./src/res/logo/logo-image.png" alt="Logo RHS Sites" class="image-head" id="image-head">
+            <img src="./src/res/logo/logo-image.png" alt="Logo RHS Sites" class="image-head" id="image-head" loading="lazy">
             <h1 class="title-head title-head-index">RHS Code</h1>
         </div>
         <nav class="right-head flex-hor">
+            <!--
+            Legacy code consuming resources, remove it later
             <div id="scrool-zero" class="hide">
                 <img src="./src/res/vectors/ico/instagram.png" alt="Instagram">
                 <img src="./src/res/ico/mail-logo.png" alt="Email">
-            </div>
+            </div
+            -->
             <div id="scrool-head" class="flex-hor right-head-buttons-parent">
                 <button class="button-head" onclick=goToPortfolio()>
-                    <img src="./src/res/ico/services-portfolio.png" alt="Service Portfólio" class="button-head-image">
+                    <img src="./src/res/ico/services-portfolio.png" alt="Service Portfólio" class="button-head-image" loading="lazy">
                     <p id="lang-header-portfolio">Portfólio</p>
                 </button>
                 <button class="button-head c-head" onclick=goContact()>
-                    <img src="./src/res/ico/comment.png" alt="Message" class="button-head-image">
+                    <img src="./src/res/ico/comment.png" alt="Message" class="button-head-image" loading="lazy">
                 </button>
                 <select name="lang-sel" id="lang-sel">
                     <option value="port">PT</option>
@@ -46,13 +49,13 @@
                 <p>Experiencia prática e projetos pessoais escritos em:</p>
                 <div class="experience-tab-flex">
                     <div class="experience-tab">
-                        <img src="./src/res/logo/python.png" alt="Python Logo" draggable="false">
+                        <img src="./src/res/logo/python.png" alt="Python Logo" draggable="false" loading="lazy">
                         <div class="right-experience-tab">
                             <div>Python</div>
                         </div>
                     </div>
                     <div class="experience-tab">
-                        <img src="./src/res/logo/jsx.png" alt="React Logo" draggable="false">
+                        <img src="./src/res/logo/jsx.png" alt="React Logo" draggable="false" loading="lazy">
                         <div class="right-experience-tab">
                             <div>React</div>
                         </div>
@@ -61,13 +64,13 @@
                 <p>Criando nova experiencia ativamente em:</p>
                 <div class="experience-tab-flex">
                     <div class="experience-tab">
-                        <img src="./src/res/logo/java.png" alt="Java Logo" draggable="false">
+                        <img src="./src/res/logo/java.png" alt="Java Logo" draggable="false" loading="lazy">
                         <div class="right-experience-tab">
                             <div>Java</div>
                         </div>
                     </div>
                     <div class="experience-tab">
-                        <img src="./src/res/logo/typescript.png" alt="TS Logo" draggable="false">
+                        <img src="./src/res/logo/typescript.png" alt="TS Logo" draggable="false" loading="lazy">
                         <div class="right-experience-tab">
                             <div>TypeScript</div>
                         </div>
@@ -75,25 +78,25 @@
                 </div>
                 <p>Você pode estar vendo as fontes no meu perfil do GitHub.</p>
                 <button id="contact-now" class="button-main-top" onclick=goContact()>
-                    <img src="./src/res/ico/comment.png" alt="GitHub" class="button-main-image">
+                    <img src="./src/res/ico/comment.png" alt="GitHub" class="button-main-image" loading="lazy">
                     <span>Contate-me</span>
                 </button>
             </div>
             <div class="image-side-main">
-                <img src="./src/res/logo/python-js.png" alt="Logos de Python e JavaScript" class="main-splash-img" draggable="false">
+                <img src="./src/res/logo/python-js.png" alt="Logos de Python e JavaScript" class="main-splash-img" draggable="false" loading="lazy">
             </div>
         </div>
         <div class="flex-ver main-container-second-tb">
-            <img src="./src/res/img/vs-code-photo.jpg" alt="VS Code Photo" class="secondTb-img-back">
+            <img src="./src/res/img/vs-code-photo.jpg" alt="VS Code Photo" class="secondTb-img-back" loading="lazy">
             <div class="flex-ver child-container-second-tb">
                 <h3 class="secTb-title">Áreas de Atuação</h3>
                 <div class="secondTb">
                     <div class="flex-ver">
-                        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" class="secTb-badges-logo">
+                        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" class="secTb-badges-logo" loading="lazy">
                         <p>Python foi a linguagem que me ensinou a logica da programação, me fez descobrir o gosto de criar novos programas e continuar nesta area. Atualmente, não é o meu principal foco por não ter suporte a outros dispositivos, mas é otimo para programas desktops e automações.</p>
                     </div>
                     <div class="flex-ver">
-                        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000" alt="JavaScript" class="secTb-badges-logo">
+                        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000" alt="JavaScript" class="secTb-badges-logo" loading="lazy">
                         <p>JavaScript é a linguagem que mais tive interesse de aprender pela incrivel responsividade e possibilidades online dentro dela, fui tentar ser ambicioso de aprender Java até conhecer essa aí 😅. Meu foco principal esta sendo os frameworks React & Typescript</p>
                     </div>
                 </div>
@@ -104,7 +107,7 @@
             <div class="flex-ver child-container-thirty-tb">
                 <div class="thirtyTb">
                     <div class="image-side-main">
-                        <img src="./src/res/ico/question.png" alt="" class="main-splash-img">
+                        <img src="./src/res/ico/question.png" alt="" class="main-splash-img" loading="lazy">
                     </div>
                     <div class="flex-ver index-txt">
                         <p>Eu faço um trabalho de organização impecavel em seu proximo site! Todos os codigos ficam bem declarados e organizados em cada canto, fazendo assim uma manutenção posterior muito mais facil e amigavel pro seu bolso.</p>
@@ -118,15 +121,15 @@
             <h3>Você ainda pode tentar:</h3>
             <div style="display: flex; flex-direction: row; gap: 12px;">
                 <button class="button-head" onclick=goToGithub()>
-                    <img src="./src/res/ico/github.png" alt="GitHub" class="button-head-image">
+                    <img src="./src/res/ico/github.png" alt="GitHub" class="button-head-image" loading="lazy">
                     <p>Github</p>
                 </button>
                 <button class="button-head" onclick=goContact()>
-                    <img src="./src/res/ico/comment.png" alt="Message" class="button-head-image">
+                    <img src="./src/res/ico/comment.png" alt="Message" class="button-head-image" loading="lazy">
                     <p id="lang-header-contact">Contato</p>
                 </button>
                 <button class="button-head" onclick=goHome() disabled>
-                    <img src="./src/res/ico/return-button.png" alt="Return" class="button-head-image" style="filter: invert(1);">
+                    <img src="./src/res/ico/return-button.png" alt="Return" class="button-head-image" style="filter: invert(1);" loading="lazy">
                     <p>Voltar</p>
                 </button>
         </div>
@@ -144,13 +147,13 @@
                 <p>Real experience & personal projects written on:</p>
                 <div class="experience-tab-flex">
                     <div class="experience-tab">
-                        <img src="./src/res/logo/python.png" alt="Python Logo" draggable="false">
+                        <img src="./src/res/logo/python.png" alt="Python Logo" draggable="false" loading="lazy">
                         <div class="right-experience-tab">
                             <div>Python</div>
                         </div>
                     </div>
                     <div class="experience-tab">
-                        <img src="./src/res/logo/jsx.png" alt="React Logo" draggable="false">
+                        <img src="./src/res/logo/jsx.png" alt="React Logo" draggable="false" loading="lazy">
                         <div class="right-experience-tab">
                             <div>React</div>
                         </div>
@@ -159,13 +162,13 @@
                 <p>Actively creatiing experience on:</p>
                 <div class="experience-tab-flex">
                     <div class="experience-tab">
-                        <img src="./src/res/logo/java.png" alt="Java Logo" draggable="false">
+                        <img src="./src/res/logo/java.png" alt="Java Logo" draggable="false" loading="lazy">
                         <div class="right-experience-tab">
                             <div>Java</div>
                         </div>
                     </div>
                     <div class="experience-tab">
-                        <img src="./src/res/logo/typescript.png" alt="Python Logo" draggable="false">
+                        <img src="./src/res/logo/typescript.png" alt="Python Logo" draggable="false" loading="lazy">
                         <div class="right-experience-tab">
                             <div>TypeScript</div>
                         </div>
@@ -173,12 +176,12 @@
                 </div>
                 <p>You can check the fonts on my GitHub Profile.</p>
                 <button id="contact-now" class="button-main-top" onclick=goContact()>
-                    <img src="./src/res/ico/comment.png" alt="GitHub" class="button-main-image">
+                    <img src="./src/res/ico/comment.png" alt="GitHub" class="button-main-image" loading="lazy">
                     <span>Contact Me</span>
                 </button>
             </div>
             <div class="image-side-main">
-                <img src="./src/res/logo/python-js.png" alt="Logos de Python e JavaScript" class="main-splash-img" draggable="false">
+                <img src="./src/res/logo/python-js.png" alt="Logos de Python e JavaScript" class="main-splash-img" draggable="false" loading="lazy">
             </div>
         </div>
         <div class="flex-ver main-container-second-tb">
@@ -187,11 +190,11 @@
                 <h3 class="secTb-title">Knowledge Fields</h3>
                 <div class="secondTb">
                     <div class="flex-ver">
-                        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" class="secTb-badges-logo">
+                        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" class="secTb-badges-logo" loading="lazy">
                         <p>Python was the language that taught me the logic of programming, made me discover the taste of creating new programs and continue in this area. Currently, it's not my main focus because it doesn't support other devices, but it's great for desktop programs and automations.</p>
                     </div>
                     <div class="flex-ver">
-                        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000" alt="JavaScript" class="secTb-badges-logo">
+                        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000" alt="JavaScript" class="secTb-badges-logo" loading="lazy">
                         <p>JavaScript is the language that I was most interested in learning because of the incredible responsiveness and online possibilities within it, I tried to be ambitious to learn Java until I met this one 😅. My main focus is on React & Typescript frameworks, like React and TypeScript.</p>
                     </div>
                 </div>
@@ -202,7 +205,7 @@
             <div class="flex-ver child-container-thirty-tb">
                 <div class="thirtyTb">
                     <div class="image-side-main">
-                        <img src="./src/res/ico/question.png" alt="" class="main-splash-img">
+                        <img src="./src/res/ico/question.png" alt="" class="main-splash-img" loading="lazy">
                     </div>
                     <div class="flex-ver index-txt">
                         <p>I do an impeccable job of organizing your next site! All codes are well declared and organized in each corner, making subsequent maintenance much easier and friendlier for your pocket.</p>
@@ -216,15 +219,15 @@
             <h3>Meanwhile, you can still try:</h3>
             <div style="display: flex; flex-direction: row; gap: 12px;">
                 <button class="button-head" onclick=goToGithub()>
-                    <img src="./src/res/ico/github.png" alt="GitHub" class="button-head-image">
+                    <img src="./src/res/ico/github.png" alt="GitHub" class="button-head-image" loading="lazy">
                     <p>Github</p>
                 </button>
                 <button class="button-head" onclick=goContact()>
-                    <img src="./src/res/ico/comment.png" alt="Message" class="button-head-image">
+                    <img src="./src/res/ico/comment.png" alt="Message" class="button-head-image" loading="lazy">
                     <p id="lang-header-contact">Contact</p>
                 </button>
                 <button class="button-head" onclick=goHome() disabled>
-                    <img src="./src/res/ico/return-button.png" alt="Return" class="button-head-image" style="filter: invert(1);">
+                    <img src="./src/res/ico/return-button.png" alt="Return" class="button-head-image" style="filter: invert(1);" loading="lazy">
                     <p>Back</p>
                 </button>
         </div>
@@ -236,7 +239,7 @@
             <b>Este site ainda não está pronto</b>
         </div>
         <div class="flex-hor">
-            <button onclick=goToIgPort()><img src="./src/res/ico/instagram.png" alt="Instagram"></button>
+            <button onclick=goToIgPort()><img src="./src/res/ico/instagram.png" alt="Instagram" loading="lazy"></button>
         </div>
         <div class="flex-hor align last-line-footer">
             <small><a href="#">RHS Code</a> é uma marca digital criada por Ryan Henrique</small>
