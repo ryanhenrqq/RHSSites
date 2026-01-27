@@ -470,6 +470,10 @@ main {
     align-items: center;
 }
 
+.header-txt, input {
+    width: 100%;
+}
+
 /* Portfolio Page*/
 .gapper {
     gap: 24px;
