@@ -431,10 +431,11 @@ main {
     display: flex;
     flex-direction: column;
     gap: 28px;
-    width: 80%;
+    width: 100%;
     margin-bottom: 8vh;
 }
 .contact-email-form input, .report-email-form input {
+    width: 100%;
     padding: 10px;
     border: none;
     border-radius: 18px;
