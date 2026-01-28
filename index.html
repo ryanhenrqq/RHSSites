@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="./src/res/logo/logo-image.png" type="image/x-icon">
 </head>
 <body class="flex-ver">
-    <header class="flex-hor">
+    <header class="flex-hor full-head-desktop">
         <div class="left-head flex-hor">
             <img src="./src/res/logo/logo-image.png" alt="Logo RHS Sites" class="image-head" id="image-head" loading="lazy">
             <h1 class="title-head title-head-index">RHS Code</h1>
@@ -25,6 +25,29 @@
                 <button class="button-head" onclick=goToPortfolio()>
                     <img src="./src/res/ico/services-portfolio.png" alt="Service Portfólio" class="button-head-image" loading="lazy">
                 </button>
+                <button class="button-head c-head" onclick=goContact()>
+                    <img src="./src/res/ico/comment.png" alt="Message" class="button-head-image" loading="lazy">
+                </button>
+                <select name="lang-sel" id="lang-sel">
+                    <option value="port">PT</option>
+                    <option value="eng">EN</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+    <header class="full-head-mobile">
+        <div class="left-head flex-hor">
+            <div class="right-head-buttons-parent">
+                <button class="button-head" onclick=goToPortfolio()>
+                    <img src="./src/res/ico/services-portfolio.png" alt="Service Portfólio" class="button-head-image" loading="lazy">
+                </button>
+            </div>
+        </div>
+        <div>
+            <h1 class="title-head title-head-index">RHS Code</h1>
+        </div>
+        <nav class="right-head flex-hor">
+            <div id="scrool-head" class="flex-hor right-head-buttons-parent">
                 <button class="button-head c-head" onclick=goContact()>
                     <img src="./src/res/ico/comment.png" alt="Message" class="button-head-image" loading="lazy">
                 </button>
@@ -111,6 +134,24 @@
                     <div class="flex-ver index-txt">
                         <p>Eu faço um trabalho de organização impecavel em seu proximo site! Todos os codigos ficam bem declarados e organizados em cada canto, fazendo assim uma manutenção posterior muito mais facil e amigavel pro seu bolso.</p>
                         <p>Há de concordar que um codigo todo bagunçado, antigo e mal-otimizado é muito menos amigavel pra quem irá fazer algum conserto do codigo de seu site! Fora que algo mais limpo irá, com toda certeza, deixar o seu site o mais otimizado possivel e, compartivel com os motores de navegação mais recentes presentes nos navegadores.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-ver main-container-thirty-tb">
+            <h3 class="thirtyTb-title">Cantinho das Sugestões 🥰</h3>
+            <div class="flex-ver child-container-thirty-tb">
+                <div class="thirtyTb">
+                    <div class="image-side-main">
+                        <img src="./src/res/ico/stars.png" alt="" class="main-splash-img" loading="lazy">
+                    </div>
+                    <div class="flex-ver background-index-txt">
+                        <p>Viu alguma coisa que você acha que pode melhorar? Alguma ideia de projeto, venda, ou relacionado ao meu portfólio?</p>
+                        <b>Este é o meu contato direto, direcionado apenas a sugestões de melhorias!</b>
+                        <form action="POST">
+                            <textarea name="suggestion" id="suggestion" placeholder="Escreva aqui..."></textarea>
+                            <button type="submit">Enviar</button>
+                        </form>
                     </div>
                 </div>
             </div>

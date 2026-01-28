@@ -9,14 +9,29 @@
 body {
     display: flex;
     background-color: #0f161d;
+    -webkit-user-select: none;
+    user-select: none;
 }
-header {
+.full-head-desktop {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 10vh;
+    height: 6vh;
+    background-color: #111111;
+    top: 0;
+    padding: 14px;
+    position: fixed;
+    z-index: 9;
+}
+.full-head-mobile {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 6vh;
     background-color: #111111;
     top: 0;
     padding: 14px;
@@ -35,6 +50,16 @@ footer {
     background-color: #111111;
     color: white;
     z-index: 8;
+}
+input, textarea {
+    -webkit-user-select: text;
+    user-select: text;
+}
+img, svg {
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
 }
 .align {
     justify-content: center;
@@ -121,8 +146,8 @@ footer button:hover {
     left: 30px;
 }
 .image-head {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     object-fit: cover;
     border-radius: 50%;
     padding-right: 24px;
@@ -240,6 +265,31 @@ footer button:hover {
     margin: 20px;
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
     z-index: 1;
+}
+.background-index-txt{
+    background-color: black;
+    padding: 42px;
+    width: 50%;
+    margin: 20px;
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    z-index: 1;
+    border: solid 2px white;
+    border-radius: 24px;
+    gap: 16px;
+}
+.background-index-txt form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.background-index-txt textarea{
+    border-radius: 24px;
+    width: 100%;
+    height: 15rem;
+    padding: 10px;
+    border: none;
+    border-radius: 18px;
+    resize: none;
 }
 
 .index-txt h3 {
@@ -644,10 +694,16 @@ button:disabled:hover {
         overflow-x: hidden;
     }
     /* Header */
-    .title-head { 
-        font-size: 16px;
+    .full-head-desktop {
+        display: none;
     }
-    .title-head-index {
+    .full-head-mobile {
+        display: flex;
+    }
+    .title-head { 
+        font-size: 28px;
+    }
+    .image-head {
         display: none;
     }
     .button-head {
