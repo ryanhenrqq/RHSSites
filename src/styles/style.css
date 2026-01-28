@@ -359,7 +359,7 @@ footer button:hover {
 /* Estilos da tag Main */
 main {
     margin-top: 15vh;
-    animation: 2s anim-lineUp ease-out;
+    animation: 1s anim-lineUp ease-out;
     color: white;
 }
 
@@ -599,18 +599,18 @@ button:disabled:hover {
 @keyframes anim-lineUp {
   0% {
     opacity: 0;
-    transform: translateX(-80%);
+    transform: translateY(-80%);
   }
   20% {
     opacity: 0.5;
   }
   50% {
     opacity: 0.7;
-    transform: translateX(0%);
+    transform: translateY(0%);
   }
   100% {
     opacity: 1;
-    transform: translateX(0%);
+    transform: translateY(0%);
   }
 }
 
