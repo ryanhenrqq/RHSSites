@@ -1,0 +1,83 @@
+body {
+    overflow-x: hidden;
+}
+/* Header */
+.full-head-desktop {
+    display: none;
+}
+.full-head-mobile {
+    display: flex;
+}
+.title-head { 
+    font-size: 28px;
+}
+.image-head {
+    display: none;
+}
+.button-head {
+    padding: 8px;
+}
+.button-head img {
+    width: 28px;
+    height: 28px;
+}
+.button-head p{
+    font-size: 10px;
+}
+/* ^^^ */
+.blank-square {
+    width: 93%;
+    height: 65vh;
+    left: 10px;
+    right: 10px;
+}
+main {
+    flex-wrap: wrap;
+}
+.experience-tab {
+    width: 90%;
+    height: 2rem;
+}
+.experience-tab img {
+    width: 20px;
+    height: 20px;
+}
+.right-experience-tab div {
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+.index-txt {
+    width: 90%;
+}
+.index-txt h3 {
+    font-size: 28px;
+}
+.index-txt p {
+    font-size: 16px;
+}
+.button-main-top {
+    font-size: 20px;
+}
+.image-side-main {
+    width: 0%;
+    display: none;
+}
+.secTb-title {
+    font-size: 30px;
+}
+.thirtyTb-title {
+    font-size: 21px;
+}
+.thirtyTb p {
+    font-weight: 400;
+}
+.secondTb {
+    flex-direction: column;
+    margin-bottom: 6vh;
+}
+.secondTb div p {
+    margin: 12px;
+}
+.portfolio-grid {
+    grid-template-columns: 1fr;
+}
