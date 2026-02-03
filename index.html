@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    <!--
+        Future ideas:
+            Separating the english and the portuguese pages on a en.html and pt.html
+            This way will avoid the bug on the media bottom floating selector, 
+            that always display the other language instead the correct!
+
+            Optimize the css, and most important, script
+    -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
@@ -15,13 +23,6 @@
             <h1 class="title-head title-head-index">RHS Code</h1>
         </div>
         <nav class="right-head flex-hor">
-            <!--
-            Legacy code consuming resources, remove it later
-            <div id="scrool-zero" class="hide">
-                <img src="./src/res/vectors/ico/instagram.png" alt="Instagram">
-                <img src="./src/res/ico/mail-logo.png" alt="Email">
-            </div
-            -->
             <div id="scrool-head" class="flex-hor right-head-buttons-parent">
                 <button class="button-head" onclick=goToPortfolio()>
                     <img src="./src/res/ico/services-portfolio.png" alt="Service Portfólio" class="button-head-image" loading="lazy">
@@ -299,7 +300,7 @@
         </div>
     </footer>
     <script src="./src/script/redirect.js"></script>
-    <script src="./src/script/script.js"></script>
+    <script src="./src/script/script.js" defer></script>
     <script src="./src/script/lang-selector.js"></script>
 </body>
 </html>
