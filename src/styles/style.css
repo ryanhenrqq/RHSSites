@@ -355,7 +355,7 @@ footer button:hover {
 /* Estilos da tag Main */
 main {
     margin-top: 12vh;
-    animation: 1s anim-lineUp ease-out;
+    animation: 0.5s anim-lineUp ease-out;
     color: white;
 }
 
