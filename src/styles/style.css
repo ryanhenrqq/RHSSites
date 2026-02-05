@@ -8,7 +8,8 @@
 /* TAGS */
 body {
     display: flex;
-    background-color: #0f161d;
+    background: #001404;
+    background: linear-gradient(164deg, rgba(0, 20, 4, 1) 0%, rgba(0, 43, 14, 1) 50%, rgba(0, 120, 34, 1) 100%);
     -webkit-user-select: none;
     user-select: none;
 }
