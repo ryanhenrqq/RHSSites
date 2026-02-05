@@ -158,7 +158,7 @@ footer button:hover {
     transition: opacity 0.8s ease-in-out;
 }
 .title-head {
-    color: white;
+    color: #009c34;
     transition: color 0.4s ease;
 }
 .title-head:hover {
