@@ -25,7 +25,8 @@
     <main class="flex-ver" id="form-frontpanel">
         <small>O bug será reportado de forma anônima, e alguns dados basicos foram coletados para ajudar a solucionar o problema com maior eficiencia. Especifique-o abaixo com o maximo de detalhes que puder!</small>
         <div class="header-txt">
-            <form class="contact-email-form" id="contact-report-form" autocomplete="off">
+            <form class="contact-email-form" id="contact-report-form" autocomplete="off" 
+            >
                 <label for="project-name">Projeto:</label>
                 <input type="text" name="project-name" id="project-name" placeholder="Nome" disabled>
                 <label for="browser-get">Cliente</label>
@@ -49,6 +50,12 @@
                 <button type="submit" class="button-main-top">Enviar</button>
             </form>
         </div>
+    </main>
+    <main class="flex-ver gapper" id="submitted" style="display: none;">
+        <div class="flex-hor">
+            <h2>Reportado com sucesso!</h2>
+        </div>
+        <h4>O seu report chegou. Por ajudas assim que os aplicativos ficam ideais para você!</h4>
     </main>
     <div class="page-end-suggestion">
         <h3>Você chegou ao final da pagina :D</h3>
