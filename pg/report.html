@@ -25,8 +25,7 @@
     <main class="flex-ver" id="form-frontpanel">
         <small>O bug será reportado de forma anônima, e alguns dados basicos foram coletados para ajudar a solucionar o problema com maior eficiencia. Especifique-o abaixo com o maximo de detalhes que puder!</small>
         <div class="header-txt">
-            <form class="contact-email-form" id="contact-report-form" autocomplete="off" 
-            >
+            <form class="contact-email-form" id="contact-report-form" autocomplete="off">
                 <label for="project-name">Projeto:</label>
                 <input type="text" name="project-name" id="project-name" placeholder="Nome" disabled>
                 <label for="browser-get">Cliente</label>
@@ -34,12 +33,12 @@
                 <label for="browser-get">Plataforma</label>
                 <input type="text" name="SO-get" id="SO-get" disabled>
                 <label for="name-email">Tipo de bug:</label>
-                <select name="type-service-email" id="type-service-email" required>
-                    <option value="" selected disabled>Escolha...</option>
-                    <option value="">Bug Visual</option>
-                    <option value="">Bug de Funcionalidade</option>
-                    <option value="">Bug Interno</option>
-                    <option value="">Outro (Especifique)</option>
+                <select name="type-bug-email" id="type-service-email" required>
+                    <option value="not-selected" selected disabled>Escolha...</option>
+                    <option value="visual-bug">Bug Visual</option>
+                    <option value="functionality-bug">Bug de Funcionalidade</option>
+                    <option value="internal-bug">Bug Interno</option>
+                    <option value="other">Outro (Especifique)</option>
                 </select>
                 <label for="name-email">Explicação:</label>
                 <textarea name="content-email" id="content-email" placeholder="Mensagem" required></textarea>
