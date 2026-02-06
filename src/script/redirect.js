@@ -16,6 +16,9 @@ function goToIgPort() {
 function goToIgEng() {
     window.open("https://www.instagram.com/rhs.codev/")
 }
+function goToKoFi() {
+    window.open("https://ko-fi.com/rhscode/")
+}
 function goToNewPipe() {
     window.open("https://newpipe.net/")
 }
