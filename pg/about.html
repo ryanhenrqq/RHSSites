@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#002B0E"> <!--Update other pages too later-->
+    <link rel="stylesheet" href="../src/styles/style.css">
+    <link rel="stylesheet" href="../src/styles/mobile.css" media="(max-width: 768px)">
+    <title>RHS Code</title>
+    <link rel="shortcut icon" href="../src/res/logo/logo-image.png" type="image/x-icon">
+</head>
+<body class="flex-ver">
+    <header class="flex-hor full-head-desktop full-head-mobile">
+        <div class="left-head flex-hor">
+            <img src="../src/res/logo/logo-image.png" alt="Logo RHS Sites" class="image-head" loading="lazy">
+            <h1 class="title-head" id="title-head-dynamo">RHS Code</h1>
+        </div>
+        <nav class="right-head flex-hor">
+            <div id="scrool-head" class="flex-hor right-head-buttons-parent">
+                <button class="button-head" onclick=goHome()>
+                    <img src="../src/res/ico/return-button.png" alt="Return" class="button-head-image" style="filter: invert(1);" loading="lazy">
+                    <p>Voltar</p>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-ver gapper">
+        <div>
+            <h3>RHS CODE</h3>
+        </div>
+        <div>
+            <p>
+                RHS Code, fundado em 2024, é uma empresa autonoma criada e pensada para oferecer soluções profissionais em criação de sites e serviços direccionados a software.
+            </p>
+            
+        </div>
+        <div>
+            <h3>Contas Profissionais</h3>
+        </div>
+        <div class="flex-hor gapper"> 
+            <button class="button-head" onclick=goToIgEng()>Instagram - English</button>
+            <button class="button-head" onclick=goToIgPort()>Instagram - Portuguese/Brazil</button>
+        </div>
+    </main>
+    
+    <footer id="pt-version-footer-index">
+        <div class="flex-hor align">
+            <h2 style="color: #ff5757;">Aviso</h2>
+            <b>Este site ainda não está pronto</b>
+        </div>
+        <div class="flex-hor">
+            <button onclick=goToIgPort()><img src="../src/res/ico/instagram.png" alt="Instagram" loading="lazy"></button>
+        </div>
+        <div class="flex-hor align last-line-footer">
+            <small><a href="#">RHS Code</a> é uma marca digital criada por Ryan Henrique</small>
+        </div>
+    </footer>
+    <footer id="en-version-footer-index" style="display: none;">
+        <div class="flex-hor align">
+            <h2 style="color: #ff5757;">Notice</h2>
+            <b>This website isn`t done yet!</b>
+        </div>
+        <div class="flex-hor">
+            <button onclick=goToIgEng()><img src="../src/res/ico/instagram.png" alt="Instagram"></button>
+        </div>
+        <div class="flex-hor align last-line-footer">
+            <small><a href="#">RHS Code</a> is a digital brand created by Ryan Henrique</small>
+        </div>
+    </footer>
+    <script type="speculationrules">
+        {
+            "prefetch": [
+                {
+                    "source": "list",
+                    "urls": ["./pg/portfolio.html", "./pg/contact.html"]
+                }
+            ] 
+        }
+    </script>
+    <script src="../src/script/redirect.js"></script>
+    <script src="../src/script/script.js" defer></script>
+    <script src="../src/script/lang-selector.js"></script>
+</body>
+</html>
