@@ -93,6 +93,13 @@ footer button:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
+footer div a{
+    font-weight: bolder;
+}
+footer div a:hover {
+    color: #24d600;
+    cursor: pointer;
+}
 /* Ids importantes - destaque */
 #lang-sel {
     padding: 8px;
